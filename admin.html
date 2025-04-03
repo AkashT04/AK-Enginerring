@@ -10,11 +10,12 @@
 <body>
     <h2>Admin - Manage Products</h2>
     <form id="product-form">
-        <input type="text" id="product-name" placeholder="Product Name">
-        <input type="text" id="product-category" placeholder="Category">
-        <input type="text" id="product-subcategory" placeholder="Subcategory">
+        <input type="text" id="product-name" name="name" placeholder="Product Name" required>
+        <input type="text" id="product-category" name="category" placeholder="Category" required>
+        <input type="text" id="product-subcategory" name="subcategory" placeholder="Subcategory" required>
         <button type="submit">Add Product</button>
     </form>
+    
     <h3>Product List</h3>
     <ul id="admin-product-list"></ul>
 </body>
